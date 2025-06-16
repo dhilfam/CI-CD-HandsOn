@@ -12,7 +12,6 @@ df = pd.read_csv("C:\Users\fadhi\AI Engineer Fellowship\Week 4\cicd_handson\Week
 
 descriptions = df['Product Description'].tolist()
 
-# Tokenize
 # tokenize product descriptions
 def preprocess(desc):
   encodings = tokenizer(desc, truncation=True, padding=True)
